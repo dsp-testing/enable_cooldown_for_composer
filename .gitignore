@@ -1,0 +1,14 @@
+# Composer dependencies
+/vendor/
+/composer.lock
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and cache
+*.log
+/cache/
+/storage/
+
+# Environment files
+.env

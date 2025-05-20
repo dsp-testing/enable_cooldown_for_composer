@@ -1,0 +1,43 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  # 📌 Group 1: Default Cooldown (60 days)   
+  - package-ecosystem: "composer"
+    open-pull-requests-limit: 15
+    directory: "/cooldown-default"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 60
+
+  # Semver Major Cooldown (60 days)
+  - package-ecosystem: "npm"
+    open-pull-requests-limit: 16
+    directory: "/cooldown-major"
+    schedule:
+      interval: "daily"
+    cooldown:
+      semver-major-days: 60
+
+
+  # Cooldown with Mixed Inclusion/Exclusion
+  - package-ecosystem: "composer"
+    open-pull-requests-limit: 14
+    directory: "/cooldown-mixed"
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 60
+      include:
+        - "eslint"
+        - "typescript"
+      exclude:
+        - "prettier"
+
+  # no cooldown
+  # - package-ecosystem: "composer"
+  #   open-pull-requests-limit: 14
+  #   directory: "/no-cooldown"
+  #   schedule:
+  #     interval: "daily"
+      
