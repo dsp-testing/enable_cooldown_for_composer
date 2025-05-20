@@ -1,23 +1,23 @@
 version: 2
 enable-beta-ecosystems: true
 updates:
-  # 📌 Group 1: Default Cooldown (60 days)   
+  # 📌 Group 1: Default Cooldown (30 days)   
   - package-ecosystem: "composer"
     open-pull-requests-limit: 15
     directory: "/cooldown-default"
     schedule:
       interval: "daily"
     cooldown:
-      default-days: 60
+      default-days: 30
 
-  # Semver Major Cooldown (60 days)
+  # Semver Major Cooldown (30 days)
   - package-ecosystem: "npm"
     open-pull-requests-limit: 16
     directory: "/cooldown-major"
     schedule:
       interval: "daily"
     cooldown:
-      semver-major-days: 60
+      semver-major-days: 30
 
 
   # Cooldown with Mixed Inclusion/Exclusion
@@ -27,17 +27,12 @@ updates:
     schedule:
       interval: "daily"
     cooldown:
-      default-days: 60
+      default-days: 30
       include:
-        - "eslint"
-        - "typescript"
+        - "phpunit/phpunit"
+        - "mockery/mockery"
+        - "squizlabs/php_codesniffer"
       exclude:
-        - "prettier"
-
-  # no cooldown
-  # - package-ecosystem: "composer"
-  #   open-pull-requests-limit: 14
-  #   directory: "/no-cooldown"
-  #   schedule:
-  #     interval: "daily"
-      
+        - "friendsofphp/php-cs-fixer"
+        - "fakerphp/faker"
+    
