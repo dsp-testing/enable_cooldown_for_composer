@@ -1,7 +1,7 @@
 version: 2
 enable-beta-ecosystems: true
 updates:
-  # 📌 Group 1: Default Cooldown (30 days)   
+  # Default Cooldown (30 days)   
   - package-ecosystem: "composer"
     open-pull-requests-limit: 15
     directory: "/cooldown-default"
@@ -11,13 +11,31 @@ updates:
       default-days: 30
 
   # Semver Major Cooldown (30 days)
-  - package-ecosystem: "npm"
+  - package-ecosystem: "composer"
     open-pull-requests-limit: 16
     directory: "/cooldown-major"
     schedule:
       interval: "daily"
     cooldown:
       semver-major-days: 30
+
+   # Semver Minor Cooldown (30 days)
+  - package-ecosystem: "composer"
+    open-pull-requests-limit: 14
+    directory: "/cooldown-minor"
+    schedule:
+      interval: "daily"
+    cooldown:
+      semver-minor-days: 30
+
+  # Semver Patch Cooldown (30 days)
+  - package-ecosystem: "composer"
+    open-pull-requests-limit: 14
+    directory: "/cooldown-patch"
+    schedule:
+      interval: "daily"
+    cooldown:
+      semver-patch-days: 30
 
 
   # Cooldown with Mixed Inclusion/Exclusion

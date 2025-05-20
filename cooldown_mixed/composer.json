@@ -1,4 +1,6 @@
 {
+    "name": "cooldown-mixed",
+    "description": "A sample PHP project with development dependencies.",
     "require": {
         "phpunit/phpunit": "^9.5",
         "mockery/mockery": "^1.4",

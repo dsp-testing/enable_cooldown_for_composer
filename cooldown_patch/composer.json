@@ -1,0 +1,11 @@
+{
+    "name": "cooldown-mixed",
+    "description": "A sample PHP project with development dependencies.",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "mockery/mockery": "^1.4.1",
+        "squizlabs/php_codesniffer": "^3.6.1",
+        "friendsofphp/php-cs-fixer": "^3.0.1",
+        "fakerphp/faker": "^1.20.1"
+    }
+}
