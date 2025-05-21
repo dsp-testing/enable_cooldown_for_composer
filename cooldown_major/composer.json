@@ -1,5 +1,5 @@
 {
-    "name": "cooldown-major",
+    "name": "vendor/cooldown-major",
     "description": "A sample PHP project with development dependencies.",
     "require": {
         "php": "^8.2",

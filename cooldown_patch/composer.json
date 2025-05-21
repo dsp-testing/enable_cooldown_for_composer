@@ -1,5 +1,5 @@
 {
-    "name": "cooldown-mixed",
+    "name": "vendor/cooldown-mixed",
     "description": "A sample PHP project with development dependencies.",
     "require": {
         "guzzlehttp/guzzle": "^7.0.1",

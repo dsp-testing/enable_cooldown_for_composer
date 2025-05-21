@@ -1,5 +1,5 @@
 {
-    "name": "cooldown-mixed",
+    "name": "vendor/cooldown-mixed",
     "description": "A sample PHP project with development dependencies.",
     "require": {
         "phpunit/phpunit": "^9.5",
