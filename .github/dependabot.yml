@@ -4,7 +4,7 @@ updates:
   # Default Cooldown (60 days)   
   - package-ecosystem: "composer"
     open-pull-requests-limit: 16
-    directory: "/cooldown-default"
+    directory: "/cooldown_default"
     schedule:
       interval: "daily"
     cooldown:
@@ -13,7 +13,7 @@ updates:
   # Semver Major Cooldown (60 days)
   - package-ecosystem: "composer"
     open-pull-requests-limit: 16
-    directory: "/cooldown-major"
+    directory: "/cooldown_major"
     schedule:
       interval: "daily"
     cooldown:
@@ -22,7 +22,7 @@ updates:
    # Semver Minor Cooldown (60 days)
   - package-ecosystem: "composer"
     open-pull-requests-limit: 14
-    directory: "/cooldown-minor"
+    directory: "/cooldown_minor"
     schedule:
       interval: "daily"
     cooldown:
@@ -31,7 +31,7 @@ updates:
   # Semver Patch Cooldown (60 days)
   - package-ecosystem: "composer"
     open-pull-requests-limit: 14
-    directory: "/cooldown-patch"
+    directory: "/cooldown_patch"
     schedule:
       interval: "daily"
     cooldown:
@@ -41,7 +41,7 @@ updates:
   # Cooldown with Mixed Inclusion/Exclusion
   - package-ecosystem: "composer"
     open-pull-requests-limit: 14
-    directory: "/cooldown-mixed"
+    directory: "/cooldown_mixed"
     schedule:
       interval: "daily"
     cooldown:
