@@ -3,7 +3,7 @@
     "description": "A sample PHP project with development dependencies.",
     "require": {
         "erusev/parsedown": "^1.6.0",
-        "illuminate/support": "^5.2.0",
+        "illuminate/support": "^12.10.1",
         "symfony/flex": "^1.0",
         "symfony/lock": "^4.1"
     },
