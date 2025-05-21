@@ -1,5 +1,5 @@
 {
-    "name": "cooldown-default",
+    "name": "vendor/cooldown-default",
     "description": "A sample PHP project with development dependencies.",
     "require": {
         "erusev/parsedown": "^1.6.0",
