@@ -4,53 +4,53 @@ updates:
   # Default Cooldown (30 days)   
   - package-ecosystem: "composer"
     open-pull-requests-limit: 16
-    directory: "./cooldown-default"
+    directory: "/"
     schedule:
       interval: "daily"
     cooldown:
       default-days: 30
 
-  # Semver Major Cooldown (30 days)
-  - package-ecosystem: "composer"
-    open-pull-requests-limit: 16
-    directory: "./cooldown-major"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-major-days: 30
+  # # Semver Major Cooldown (30 days)
+  # - package-ecosystem: "composer"
+  #   open-pull-requests-limit: 16
+  #   directory: "./cooldown-major"
+  #   schedule:
+  #     interval: "daily"
+  #   cooldown:
+  #     semver-major-days: 30
 
-   # Semver Minor Cooldown (30 days)
-  - package-ecosystem: "composer"
-    open-pull-requests-limit: 14
-    directory: "./cooldown-minor"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-minor-days: 30
+  #  # Semver Minor Cooldown (30 days)
+  # - package-ecosystem: "composer"
+  #   open-pull-requests-limit: 14
+  #   directory: "./cooldown-minor"
+  #   schedule:
+  #     interval: "daily"
+  #   cooldown:
+  #     semver-minor-days: 30
 
-  # Semver Patch Cooldown (30 days)
-  - package-ecosystem: "composer"
-    open-pull-requests-limit: 14
-    directory: "./cooldown-patch"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-patch-days: 30
+  # # Semver Patch Cooldown (30 days)
+  # - package-ecosystem: "composer"
+  #   open-pull-requests-limit: 14
+  #   directory: "./cooldown-patch"
+  #   schedule:
+  #     interval: "daily"
+  #   cooldown:
+  #     semver-patch-days: 30
 
 
-  # Cooldown with Mixed Inclusion/Exclusion
-  - package-ecosystem: "composer"
-    open-pull-requests-limit: 14
-    directory: "./cooldown-mixed"
-    schedule:
-      interval: "daily"
-    cooldown:
-      default-days: 30
-      include:
-        - "phpunit/phpunit"
-        - "mockery/mockery"
-        - "squizlabs/php_codesniffer"
-      exclude:
-        - "friendsofphp/php-cs-fixer"
-        - "fakerphp/faker"
+  # # Cooldown with Mixed Inclusion/Exclusion
+  # - package-ecosystem: "composer"
+  #   open-pull-requests-limit: 14
+  #   directory: "./cooldown-mixed"
+  #   schedule:
+  #     interval: "daily"
+  #   cooldown:
+  #     default-days: 30
+  #     include:
+  #       - "phpunit/phpunit"
+  #       - "mockery/mockery"
+  #       - "squizlabs/php_codesniffer"
+  #     exclude:
+  #       - "friendsofphp/php-cs-fixer"
+  #       - "fakerphp/faker"
     
