@@ -2,7 +2,7 @@
     "name": "vendor/cooldown-mixed",
     "description": "A sample PHP project with development dependencies.",
     "require": {
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^12.1",
         "mockery/mockery": "^1.4",
         "squizlabs/php_codesniffer": "^3.6",
         "friendsofphp/php-cs-fixer": "^3.0",
